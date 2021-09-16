@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class Docente extends Personas implements Empleado{
+	private double salario;
+	private int añosExperiencia;
+	
+	public Docente(String nombre, String apellido, int edad, int identificacion, double salario, int añosExperiencia) {
+		super(nombre, apellido, edad, identificacion);
+		this.salario = salario;
+		this.añosExperiencia = añosExperiencia;
+	}
+
+	
+	public void reporteNotas(ArrayList<Estudiante> listaEstudiantes ) {
+		for(int x=0;listaEstudiantes.size();x++) {
+			System.out.print("Ingrese la nota: ");
+			listaEstudiantes.get(x).setNotas();
+		}
+			
+	}
+	public void modificarNotas() {
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Docente [salario=" + salario + ", añosExperiencia=" + añosExperiencia + ", nombre=" + nombre
+				+ ", apellido=" + apellido + ", edad=" + edad + ", identificacion=" + identificacion + ", horallegada="
+				+ horallegada + "]";
+	}
+
+	public void incrementarSalario() {
+		
+	}
+	
+	@Override
+	public void horaDeLlegada(String hora) {
+		if(hora.equals("10:00")) {
+			this.setHorallegada(hora);
+		}
+	}
+}

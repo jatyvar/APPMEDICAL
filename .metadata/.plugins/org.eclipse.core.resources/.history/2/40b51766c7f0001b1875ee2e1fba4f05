@@ -1,0 +1,5 @@
+package interfaceGUI;
+
+public interface app {
+
+}

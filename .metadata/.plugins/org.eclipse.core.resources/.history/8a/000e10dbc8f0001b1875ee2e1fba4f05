@@ -1,0 +1,15 @@
+package interfaceGUI;
+
+import javax.swing.*;
+
+public class interfazGUI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame ventana = new JFrame ("Mi Primer Ventana");
+		ventana.setVisible(true);
+		ventana.setSize(400, 500);
+		ventana.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+	}
+
+}

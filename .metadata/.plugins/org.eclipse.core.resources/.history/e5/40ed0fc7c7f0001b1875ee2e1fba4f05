@@ -1,0 +1,8 @@
+package interfaceGUI;
+
+import javax.swing.*;
+
+public interface app {
+
+
+}

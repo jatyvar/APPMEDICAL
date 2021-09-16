@@ -1,0 +1,6 @@
+
+public class Docente extends Personas implements Empleado{
+	private double salario;
+	private int añosExperiencia;
+
+}

@@ -1,0 +1,18 @@
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Libro libro1 = new Libro ("Algebra", "Baldor", 20, 0);
+		Libro libro2 = new Libro ("Cien Años De Soledad", "Garcia Marquez", 30, 6);
+		Libro libro3 = new Libro ("piedra filosofal", "K.Rowling", 10, 3);
+		/*
+		System.out.print(libro1.toString());
+		System.out.println(libro1.prestamos(2));
+		System.out.println(libro1.prestamos(19));
+		System.out.print(libro1.toString());
+		*/
+		
+	}
+
+}

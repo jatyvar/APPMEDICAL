@@ -1,0 +1,10 @@
+
+public class Estudiante Extends Personas {
+	private int codigo;
+
+	public Estudiante(int codigo) {
+		this.codigo = codigo;
+	}
+	private double[ notas=new double[4];
+	
+}

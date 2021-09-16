@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nombre,area;
+		int edad, identificacion, id;
+		double salario;
+		
+		
+		
+		Scanner in = new Scanner(System.in);
+		Zoologico colombia = new Zoologico ("colombia", "calle15", 23423);
+		
+		System.out.print("1.Registrar un Empleado \n"
+				+ "2.Ver Liista Empleado\n"
+				+ "3.Registrar un Visitante\n"
+				+ "4.Ver Lista Visitante");
+
+		boolean bandera = true;
+		do
+		{
+			int caso =in.nextInt();
+			
+			switch(caso){
+				caso:
+					System.out.println("Registrar Ingreso Empleados");
+					System.out.println("");
+					System.out.println("Ingrese Nombre del empleado");
+					nombre=in.next();
+					System.out.println("Ingrese Edad del empleado");
+					edad=in.nextInt();
+					System.out.println("Ingrese Edad del empleado");
+					identificacion=in.nextInt();			
+					System.out.println("Ingrese Area del empleado");
+					area=in.next();
+					System.out.println("Ingrese id del empleado");
+					id=in.nextInt();
+					System.out.println("Ingrese Salario del empleado");
+					salario=in.nextDouble();
+					
+					break;
+				case2:
+					//colombia.agregarEmpleado(empleado);
+					System.out.println("Ver Lista Empleados");
+					colombia.verEmpleado();
+					break;
+				case3:
+					System.out.println("Registrar Ingreso Visitante");
+					break;
+				case4:
+					System.out.println("Ver Lista Visitantes");
+					colombia.verVisitante();;
+					break;
+				
+			}
+		}while(bandera);
+		
+	
+}

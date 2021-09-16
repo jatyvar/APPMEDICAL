@@ -1,0 +1,119 @@
+package Vista;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTabbedPane;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+
+public class Front extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textNombre;
+	private JTextField textCantidad;
+	private JTextField textPrecio;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Front frame = new Front();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Front() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(500, 500);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		contentPane.add(tabbedPane, BorderLayout.CENTER);
+		
+		JPanel Registrar = new JPanel();
+		tabbedPane.addTab("Registrar", null, Registrar, null);
+		Registrar.setLayout(null);
+		
+		JLabel lblNombre_1 = new JLabel("Nombre");
+		lblNombre_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblNombre_1.setBounds(55, 100, 54, 30);
+		Registrar.add(lblNombre_1);
+		
+		JLabel lblCantidad_1 = new JLabel("Cantidad");
+		lblCantidad_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblCantidad_1.setBounds(50, 150, 60, 30);
+		Registrar.add(lblCantidad_1);
+		
+		JLabel lblPrecio_1 = new JLabel("Precio");
+		lblPrecio_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblPrecio_1.setBounds(65, 200, 60, 30);
+		Registrar.add(lblPrecio_1);
+		
+		JLabel lblCategoria_1 = new JLabel("Categoria");
+		lblCategoria_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblCategoria_1.setBounds(47, 250, 63, 30);
+		Registrar.add(lblCategoria_1);
+		
+		textNombre = new JTextField();
+		textNombre.setBounds(150, 100, 200, 19);
+		Registrar.add(textNombre);
+		textNombre.setColumns(10);
+		
+		textCantidad = new JTextField();
+		textCantidad.setColumns(10);
+		textCantidad.setBounds(150, 150, 200, 19);
+		Registrar.add(textCantidad);
+		
+		textPrecio = new JTextField();
+		textPrecio.setColumns(10);
+		textPrecio.setBounds(150, 200, 200, 19);
+		Registrar.add(textPrecio);
+		
+		JComboBox Select = new JComboBox();
+		Select.setBounds(150, 250, 120, 21);
+		Registrar.add(Select);
+		
+		JPanel Consultar = new JPanel();
+		tabbedPane.addTab("Consultar", null, Consultar, null);
+		Consultar.setLayout(null);
+		
+		JLabel lblNombre = new JLabel("Nombre");
+		lblNombre.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblNombre.setBounds(47, 71, 60, 30);
+		Consultar.add(lblNombre);
+		
+		JLabel lblCantidad = new JLabel("Cantidad");
+		lblCantidad.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblCantidad.setBounds(47, 128, 60, 30);
+		Consultar.add(lblCantidad);
+		
+		JLabel lblPrecio = new JLabel("Precio");
+		lblPrecio.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblPrecio.setBounds(47, 195, 60, 30);
+		Consultar.add(lblPrecio);
+		
+		JLabel lblCategoria = new JLabel("Categoria");
+		lblCategoria.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		lblCategoria.setBounds(47, 260, 60, 30);
+		Consultar.add(lblCategoria);
+	}
+}

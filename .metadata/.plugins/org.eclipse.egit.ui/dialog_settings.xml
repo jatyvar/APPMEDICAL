@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/jatyvar/APPMEDICAL.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\jatyv\git\repository\.git">
+			<item value="false"/>
+			<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+			<item value="Ficheros Iniciales&#x0D;&#x0A;"/>
+			<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+			<item value="0000000000000000000000000000000000000000"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+		<list key="C:\Users\jatyv\git\repository2\.git">
+			<item value="false"/>
+			<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+			<item value="Primer codigo"/>
+			<item value="jatyv &lt;jatyv@172.29.29.66&gt;"/>
+			<item value="2a3d7fbf8fccff90ec1bd83d0eca6c09747c3136"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+</section>

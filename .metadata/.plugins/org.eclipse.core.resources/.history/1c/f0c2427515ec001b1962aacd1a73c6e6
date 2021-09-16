@@ -1,0 +1,9 @@
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Curso cuartoB = new Curso("4-B", "Camilo","Mendoza", 28, 321324, 53543, 4);
+	}
+
+}
