@@ -1,0 +1,4 @@
+com\mycompany\appmedical\resources\JavaEE8Resource.class
+com\mycompany\appmedical\JAXRSConfiguration.class
+logica\paciente.class
+persistencia\ConexionBD.class
