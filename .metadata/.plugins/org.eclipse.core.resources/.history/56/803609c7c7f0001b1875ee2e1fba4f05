@@ -1,8 +1,0 @@
-package interfaceGUI;
-
-import javax.swing.JFrame;
-
-public interface app {
-	JFrame ventana = new JFrame ("Mi Primer Ventana");
-
-}
